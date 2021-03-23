@@ -8,14 +8,22 @@ namespace EG_EndlessShapes
     [RequireComponent(typeof(Rigidbody))]
     public class GroundTileController : MonoBehaviour
     {
+        #region = Public Fields =
+        
         [Tooltip("This value neutralizes the fixedDeltaTime factor to give a " +
             "base speed of 1m/sec")]
         public float tileFactor = 50f; //Default fixed deltaTime is 0.02 (1/50). 
         public float tileSpeed = 1.0f;
+        public GameplaySettings gameSettings;
+
+        #endregion
 
 
+        #region = Private Fields =
 
         Rigidbody tileRigidbody;
+
+        #endregion
 
         private void Awake()
         {
@@ -30,7 +38,7 @@ namespace EG_EndlessShapes
 
         private void FixedUpdate()
         {
-            tileRigidbody.velocity = -1 * transform.forward * tileSpeed * tileFactor * Time.fixedDeltaTime;
+            tileRigidbody.velocity = -1 * transform.forward * gameSettings.groundSpeed/*tileSpeed*/ * tileFactor * Time.fixedDeltaTime;
 
             //Idea for game progression (dificulty increase): use Smooth damp or any of those methods to smoothly increase speed
             //from initialTileSpeed to targetTileSpeed.

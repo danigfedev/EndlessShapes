@@ -48,8 +48,6 @@ namespace EG_EndlessShapes
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log("A Ground Tile collided");
-
             GameObject collidingTile = other.gameObject;
 
             // 1 - Update colliding tile's position.

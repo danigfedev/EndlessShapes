@@ -128,3 +128,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileFactor: 50
   tileSpeed: 50
+  gameSettings: {fileID: 11400000, guid: cfc8a89281699024896a341483169c96, type: 2}
