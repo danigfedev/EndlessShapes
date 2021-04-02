@@ -3422,6 +3422,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeGate_Left (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2808412279656585968, guid: 83330fcb6743bd54f8bf6448a2c3c800,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3292884193187905610, guid: 83330fcb6743bd54f8bf6448a2c3c800,
         type: 3}
       propertyPath: m_RootOrder
