@@ -32,6 +32,7 @@ Transform:
   - {fileID: 3292884193240394498}
   - {fileID: 7432228638438679714}
   - {fileID: 1755187550617592066}
+  - {fileID: 2831982945928671618}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -156,6 +157,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CubeGate_ShadowFace
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aeb45e203e249bf45bbad4d20b82eb87,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aeb45e203e249bf45bbad4d20b82eb87, type: 3}
@@ -314,4 +320,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2971670606983151561, guid: 854b625f8dd087b4e8826ef1cc97dd1b,
     type: 3}
   m_PrefabInstance: {fileID: 5627786759458544491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7297707596074528317
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3292884193187905610}
+    m_Modifications:
+    - target: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278293204960773381, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_Name
+      value: CubeGate_InnerSide
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278293204960773381, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e98249fb6d68d1e42ab59ddc8baf7719, type: 3}
+--- !u!4 &2831982945928671618 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4759059166104641471, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+    type: 3}
+  m_PrefabInstance: {fileID: 7297707596074528317}
   m_PrefabAsset: {fileID: 0}

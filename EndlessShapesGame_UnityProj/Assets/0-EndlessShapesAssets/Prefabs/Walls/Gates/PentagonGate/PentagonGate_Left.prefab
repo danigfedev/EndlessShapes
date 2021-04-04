@@ -32,6 +32,7 @@ Transform:
   - {fileID: 1391458421216721216}
   - {fileID: 3934274349381231625}
   - {fileID: 8595788986258722281}
+  - {fileID: 1544091264042657742}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -239,6 +240,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 78271064519964909, guid: 06d0e8661823be84cb5d2d97fc7b0e7d,
     type: 3}
   m_PrefabInstance: {fileID: 4003500727609318628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5012991675937972388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4500114314796909318}
+    m_Modifications:
+    - target: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6608996310194216400, guid: 925eb6a296655a94eb5305e1792d6b55,
+        type: 3}
+      propertyPath: m_Name
+      value: PentagonGate_InnerSide
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 925eb6a296655a94eb5305e1792d6b55, type: 3}
+--- !u!4 &1544091264042657742 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5835556312549558122, guid: 925eb6a296655a94eb5305e1792d6b55,
+    type: 3}
+  m_PrefabInstance: {fileID: 5012991675937972388}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6806942511502307872
 PrefabInstance:
