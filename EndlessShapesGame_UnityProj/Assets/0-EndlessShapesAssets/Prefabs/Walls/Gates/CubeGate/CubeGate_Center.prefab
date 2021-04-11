@@ -65,6 +65,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 967df69e0b8fded498c0b80e544c233b, type: 2}
+  - {fileID: 2100000, guid: 04dd1b1fed70c5d40899d6f840de30bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -152,6 +153,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CubeGate_OccluderFace
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359924225046473603, guid: dbac30df00fdc9541b3b6749d0071db5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbac30df00fdc9541b3b6749d0071db5, type: 3}
@@ -313,6 +319,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CubeGate_InnerSide
       objectReference: {fileID: 0}
+    - target: {fileID: 5278293204960773381, guid: e98249fb6d68d1e42ab59ddc8baf7719,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e98249fb6d68d1e42ab59ddc8baf7719, type: 3}
 --- !u!4 &1321563494245486864 stripped
@@ -332,6 +343,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WallTopFace
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483363562718979443, guid: 854b625f8dd087b4e8826ef1cc97dd1b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2971670606983151561, guid: 854b625f8dd087b4e8826ef1cc97dd1b,
         type: 3}

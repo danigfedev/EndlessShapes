@@ -63,6 +63,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 7f03e278e9a9a43489eba96e200be972, type: 2}
+  - {fileID: 2100000, guid: 04dd1b1fed70c5d40899d6f840de30bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -230,6 +231,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PentagonShape_Occluder
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825713655560407127, guid: f9b855048e53fef49a6282d9bd94a349,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9b855048e53fef49a6282d9bd94a349, type: 3}

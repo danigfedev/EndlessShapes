@@ -64,6 +64,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 4f77f16b5a9d6364eb7d982135e744bc, type: 2}
+  - {fileID: 2100000, guid: 04dd1b1fed70c5d40899d6f840de30bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,7 +115,7 @@ PrefabInstance:
     - target: {fileID: 5796065320726076118, guid: 52f1e7273e2faad458574f1bb9895e36,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6567394084496261228, guid: 52f1e7273e2faad458574f1bb9895e36,
         type: 3}
@@ -245,6 +246,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PyramidShape_Occluder
+      objectReference: {fileID: 0}
+    - target: {fileID: 2143289628026676013, guid: 36dc228b79f817946a5e889ade18efd6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36dc228b79f817946a5e889ade18efd6, type: 3}
