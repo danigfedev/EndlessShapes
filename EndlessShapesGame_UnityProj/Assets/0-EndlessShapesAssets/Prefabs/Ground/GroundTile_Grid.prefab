@@ -33,6 +33,7 @@ Transform:
   - {fileID: 1948163770374703897}
   - {fileID: 1948163770401699608}
   - {fileID: 1948163770882758734}
+  - {fileID: 6888936731839038027}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -80,6 +81,36 @@ MonoBehaviour:
   tileFactor: 50
   tileSpeed: 50
   gameSettings: {fileID: 11400000, guid: cfc8a89281699024896a341483169c96, type: 2}
+--- !u!1 &5937306626434697948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6888936731839038027}
+  m_Layer: 0
+  m_Name: WallSlot
+  m_TagString: wall-slot
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6888936731839038027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5937306626434697948}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2054764983458451478}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2054764984021155749
 PrefabInstance:
   m_ObjectHideFlags: 0
