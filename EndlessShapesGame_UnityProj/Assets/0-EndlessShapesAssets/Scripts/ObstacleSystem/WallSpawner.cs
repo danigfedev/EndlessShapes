@@ -28,6 +28,9 @@ namespace ObstacleSystem
         {
 
             Debug.Log("Attaching Wall to " + enteringObject.name);
+
+            if (enteringObject.tag != Utils.Taglist.groundTile)
+                return;
             
             GameObject wallSlot = Utils.FilterUtils.FindChildWithTag(enteringObject.transform,
                                 Utils.Taglist.wallSlotTag);

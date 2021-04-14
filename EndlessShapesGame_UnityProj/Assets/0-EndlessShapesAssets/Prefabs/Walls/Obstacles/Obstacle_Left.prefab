@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 413232560669066856}
   - component: {fileID: 2474991444211724962}
   - component: {fileID: 5152668120255183361}
+  - component: {fileID: 7429828435709971362}
   m_Layer: 0
   m_Name: Obstacle_Left
   m_TagString: Untagged
@@ -99,6 +100,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e450cc3211a2074682c62cefb2ccb3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7429828435709971362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132074557226963831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.66, y: 1.9999998, z: 6.999999}
+  m_Center: {x: 0, y: 0, z: 3.4999995}
 --- !u!1001 &315891019753822139
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4370868927302157417}
   - component: {fileID: 1967093820079452323}
   - component: {fileID: 1988944423164282559}
+  - component: {fileID: 7002956982610306072}
   m_Layer: 0
   m_Name: Obstacle_Right
   m_TagString: Untagged
@@ -98,6 +99,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e450cc3211a2074682c62cefb2ccb3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7002956982610306072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21525244214514038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.66, y: 1.9999998, z: 6.999999}
+  m_Center: {x: 0, y: 0, z: 3.4999995}
 --- !u!1001 &181558416533375645
 PrefabInstance:
   m_ObjectHideFlags: 0

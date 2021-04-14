@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8882805563424425113}
   - component: {fileID: 6675152483135139923}
   - component: {fileID: 7936584795487654925}
+  - component: {fileID: 2614628674668358556}
   m_Layer: 0
   m_Name: CubeGate_Center
   m_TagString: Untagged
@@ -99,6 +100,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e450cc3211a2074682c62cefb2ccb3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &2614628674668358556
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5161718501567205766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3732787177298057421, guid: 604ec84cd3cf0c94794fe66552e30390, type: 3}
 --- !u!1001 &1638032861949760598
 PrefabInstance:
   m_ObjectHideFlags: 0

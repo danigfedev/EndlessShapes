@@ -6,8 +6,10 @@ namespace Utils
 {
     public static class Taglist
     {
+        public static readonly string groundTile = "ground-tile";
         public static readonly string wallSlotTag = "wall-slot";
         
+        // Object pool
         public static readonly string wallPoolTag = "wall-pool";
         public static readonly string leftSubpool = "wall-pool-left";
         public static readonly string centerSubpool = "wall-pool-center";
