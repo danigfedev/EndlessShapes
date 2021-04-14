@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 592584506711572123}
   - component: {fileID: 4582012318555992382}
   - component: {fileID: 1761581062777898484}
+  - component: {fileID: 7961088405083852711}
   m_Layer: 0
   m_Name: PyramidGate_Center
   m_TagString: Untagged
@@ -86,6 +87,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7961088405083852711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248428968028480545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e450cc3211a2074682c62cefb2ccb3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2725096310034306157
 PrefabInstance:
   m_ObjectHideFlags: 0

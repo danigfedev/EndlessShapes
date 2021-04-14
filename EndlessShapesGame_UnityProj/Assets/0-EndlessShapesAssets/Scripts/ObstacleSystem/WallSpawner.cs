@@ -29,9 +29,8 @@ namespace ObstacleSystem
 
             Debug.Log("Attaching Wall to " + enteringObject.name);
             
-            GameObject wallSlot = FindChildWithTag(enteringObject.transform,
+            GameObject wallSlot = Utils.FilterUtils.FindChildWithTag(enteringObject.transform,
                                 Utils.Taglist.wallSlotTag);
-
 
             WallMask wallMask = GetWallMask();
             BuildWall(wallSlot, wallMask);
@@ -101,10 +100,9 @@ namespace ObstacleSystem
                 Debug.Log("Lane name: " + lane.name);
 
                 //Select wall or gate based on mask's value
-                Debug.Log("ñpoijadwfpojiash " + wallMask.leftLaneValue);
-                Debug.Log("YOQUESEEE: " + wallMask.ToArray()[maskIdx]);
                 Transform selectedSubParent = lane.GetChild(wallMask.ToArray()[maskIdx]);
                 int wallFragmentIndex = UnityEngine.Random.Range(0, selectedSubParent.childCount);
+                Debug.Log("Wall fragment index: " + wallFragmentIndex);
                 Transform wallFragment = selectedSubParent.GetChild(wallFragmentIndex);
                 
                 //Place wall
@@ -115,6 +113,7 @@ namespace ObstacleSystem
             }
         }
 
+        /*
         /// <summary>
         /// Searches for a transform's child matching a given tag.
         /// </summary>
@@ -130,5 +129,6 @@ namespace ObstacleSystem
             }
             return null;
         }
+        */
     }
 }

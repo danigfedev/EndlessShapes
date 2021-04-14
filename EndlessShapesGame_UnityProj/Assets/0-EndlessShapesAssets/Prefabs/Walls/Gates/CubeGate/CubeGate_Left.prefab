@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3292884193187905610}
   - component: {fileID: 1881791264861048815}
   - component: {fileID: 4465741683260734245}
+  - component: {fileID: 8278843891369647441}
   m_Layer: 0
   m_Name: CubeGate_Left
   m_TagString: Untagged
@@ -86,6 +87,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8278843891369647441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808412279656585968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e450cc3211a2074682c62cefb2ccb3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3042205494042873065
 PrefabInstance:
   m_ObjectHideFlags: 0

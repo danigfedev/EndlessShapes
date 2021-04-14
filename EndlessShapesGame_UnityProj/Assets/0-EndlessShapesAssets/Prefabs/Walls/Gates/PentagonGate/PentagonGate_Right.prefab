@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 359597962927060586}
   - component: {fileID: 3698114882604349903}
   - component: {fileID: 1492556993660407045}
+  - component: {fileID: 3186564046969963112}
   m_Layer: 0
   m_Name: PentagonGate_Right
   m_TagString: Untagged
@@ -86,6 +87,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3186564046969963112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132194463549549776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e450cc3211a2074682c62cefb2ccb3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &152174012672272481
 PrefabInstance:
   m_ObjectHideFlags: 0

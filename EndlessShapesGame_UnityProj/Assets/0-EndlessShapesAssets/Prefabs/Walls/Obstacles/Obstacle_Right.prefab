@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 794790453800881100}
   - component: {fileID: 4370868927302157417}
   - component: {fileID: 1967093820079452323}
+  - component: {fileID: 1988944423164282559}
   m_Layer: 0
   m_Name: Obstacle_Right
   m_TagString: Untagged
@@ -85,6 +86,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1988944423164282559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21525244214514038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e450cc3211a2074682c62cefb2ccb3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &181558416533375645
 PrefabInstance:
   m_ObjectHideFlags: 0
