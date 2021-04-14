@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// Moves player one step to the left
     /// </summary>
-    private void MoveLeft()
+    public void MoveLeft()
     {
         if (CheckMinXLimit()) return;
         transform.position -= transform.right * stepX;
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// Moves player one step to the right
     /// </summary>
-    private void MoveRight()
+    public void MoveRight()
     {
         if (CheckMaxXLimit()) return;
         transform.position += transform.right * stepX;
@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// Moves to next shape
     /// </summary>
-    private void ToggleShapeNext()
+    public void ToggleShapeNext()
     {
         HideShape(currentShapeIndex);
         currentShapeIndex = CorrectShapeIndex(++currentShapeIndex);

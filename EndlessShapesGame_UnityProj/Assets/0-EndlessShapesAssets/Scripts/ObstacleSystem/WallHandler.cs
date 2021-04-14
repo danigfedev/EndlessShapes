@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleHandler : MonoBehaviour
+public class WallHandler : MonoBehaviour
 {
     public void OnInputTriggerEnter(GameObject inputObject)
     {
@@ -11,6 +11,7 @@ public class ObstacleHandler : MonoBehaviour
         {
             Debug.LogWarning("YOU DIED");
         }
+        
     }
 
     public void OnOutputTriggerEnter()

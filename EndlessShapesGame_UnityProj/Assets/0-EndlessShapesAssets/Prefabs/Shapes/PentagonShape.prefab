@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1370600228759688761}
   - component: {fileID: 2642067274919664028}
   - component: {fileID: 238256996478201174}
+  - component: {fileID: 4696636269282127191}
   m_Layer: 3
   m_Name: PentagonShape
   m_TagString: pentagon
@@ -84,6 +85,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4696636269282127191
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751487980850777219}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5888130452462490115, guid: 93c921509dcee0a4f9111014cded445e, type: 3}
 --- !u!1001 &5745475158990415246
 PrefabInstance:
   m_ObjectHideFlags: 0
