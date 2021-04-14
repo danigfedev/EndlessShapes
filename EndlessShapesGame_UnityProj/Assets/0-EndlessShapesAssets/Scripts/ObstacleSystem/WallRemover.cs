@@ -12,6 +12,8 @@ namespace ObstacleSystem
         public void OnTriggerEnter(Collider enteringObject)
         {
             Debug.Log("Removing Wall from " + enteringObject.name);
+            if (enteringObject.tag != Utils.Taglist.groundTile)
+                return;
 
             //1 - Find Wall Slot
             GameObject wallSlot = Utils.FilterUtils.FindChildWithTag(enteringObject.transform,
@@ -33,7 +35,7 @@ namespace ObstacleSystem
             {
                 Transform wallFragment = wallSlot.transform.GetChild(wallFragmentIdx);
 
-                Debug.LogWarning(wallFragment.name);
+                //Debug.LogWarning(wallFragment.name);
 
                 Transform wallFragmentParent = wallFragment
                         .GetComponent<WallFragmentIdentifier>().PoolParent;

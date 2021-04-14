@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3347967452433556450}
   - component: {fileID: 689800476972013352}
   - component: {fileID: 7691261974459322939}
-  m_Layer: 0
-  m_Name: CubeShape_Emission
-  m_TagString: Untagged
+  m_Layer: 3
+  m_Name: CubeShape
+  m_TagString: cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,8 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bb1af6a262ac1de4ca2876478ead6168, type: 2}
-  - {fileID: 2100000, guid: 04dd1b1fed70c5d40899d6f840de30bc, type: 2}
+  - {fileID: 2100000, guid: 9ca24c2927629c6469c8bcc2084017cf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -245,6 +244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CubeShadowFace
+      objectReference: {fileID: 0}
+    - target: {fileID: 7807456019759678380, guid: cac6093d3e1183a4aaa38e054f137d99,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cac6093d3e1183a4aaa38e054f137d99, type: 3}

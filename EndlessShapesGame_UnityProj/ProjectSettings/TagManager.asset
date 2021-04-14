@@ -6,14 +6,18 @@ TagManager:
   tags:
   - wall-slot
   - ground-tile
+  - cube
+  - pentagon
+  - pyramid
+  - obstacle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Obstacle
   - 
   - 
   - 
