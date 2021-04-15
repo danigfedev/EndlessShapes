@@ -13,6 +13,7 @@ namespace Utils
         public static readonly string pyramidTag = "pyramid";
         public static readonly string pentagonTag = "pentagon";
         public static readonly string obstacleTag = "obstacle";
+        public static readonly string gateCounterTag = "gate-counter";
 
         // Object pool
         public static readonly string wallPoolTag = "wall-pool";

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2271829782977000971}
   - component: {fileID: 4063335858457002689}
   - component: {fileID: 1428564628793456737}
-  - component: {fileID: 2261058530477138976}
   m_Layer: 6
   m_Name: PentagonGate_Center
   m_TagString: pentagon
@@ -96,18 +95,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e450cc3211a2074682c62cefb2ccb3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2261058530477138976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2549919332587037460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd8b06ea3dfb6dd41909b632b38130fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8330575939396438043
@@ -273,7 +260,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2261058530477138976}
+      objectReference: {fileID: 0}
     - target: {fileID: 6981726554413297238, guid: bce390c4a57d01c4dbdc0aebb0545213,
         type: 3}
       propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState

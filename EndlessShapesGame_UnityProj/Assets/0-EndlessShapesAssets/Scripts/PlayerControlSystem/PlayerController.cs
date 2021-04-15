@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public float maxXLimit = 6.67f;
     [Tooltip("Player's delta movement")]
     public float stepX = 6.67f;
+    
+    public Transform shapeParent;
+    public GameObject deathParticleSystem;
 
     private List<GameObject> shapeList;
     private int currentShapeIndex = 0;
@@ -37,15 +40,23 @@ public class PlayerController : MonoBehaviour
             ToggleShapePrevious();
     }
 
+    public void OnOutputTriggerEnter()
+    {
+        //Count gate
+        //Trigger gate dissolve effect
+    }
+
     private void InitializeShapes()
     {
         shapeList = new List<GameObject>();
-        for (int i = 0; i < transform.childCount; i++)
+        for (int i = 0; i < shapeParent.childCount; i++)
         {
-            GameObject shape = transform.GetChild(i).gameObject;
+            GameObject shape = shapeParent.GetChild(i).gameObject;
             shape.SetActive(i == currentShapeIndex);
             shapeList.Add(shape);
         }
+
+        deathParticleSystem.SetActive(false);
     }
 
     /// <summary>
@@ -68,6 +79,20 @@ public class PlayerController : MonoBehaviour
         if (Mathf.Abs(transform.position.x - maxXLimit) < 0.01f)
             return true;
         return false;
+    }
+
+    public void CountGate()
+    {
+
+    }
+    
+    
+    [ContextMenu("PlayerDie")]
+    public void Die()
+    {
+        foreach (GameObject shape in shapeList)
+            shape.SetActive(false);
+        deathParticleSystem.SetActive(true);
     }
 
     /// <summary>

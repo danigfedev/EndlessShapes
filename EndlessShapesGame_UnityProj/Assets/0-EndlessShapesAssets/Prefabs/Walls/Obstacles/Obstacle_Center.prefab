@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7929947600120155819}
   - component: {fileID: 5325544054607280737}
   - component: {fileID: 522616238043617376}
-  - component: {fileID: 3790000896404066240}
   m_Layer: 6
   m_Name: Obstacle_Center
   m_TagString: obstacle
@@ -97,18 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e450cc3211a2074682c62cefb2ccb3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3790000896404066240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5974269453563648948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd8b06ea3dfb6dd41909b632b38130fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1646715473205812617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -190,7 +177,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3790000896404066240}
+      objectReference: {fileID: 0}
     - target: {fileID: 6981726554413297238, guid: bce390c4a57d01c4dbdc0aebb0545213,
         type: 3}
       propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
