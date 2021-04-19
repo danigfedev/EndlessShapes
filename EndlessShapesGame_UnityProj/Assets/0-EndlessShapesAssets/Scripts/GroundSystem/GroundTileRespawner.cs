@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EG_EndlessShapes
+namespace GroundSystem
 {
     public enum GroundMotionDirections
     {

@@ -10,6 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09f109ef9ba65fd478ce76f5129add6c, type: 3}
-  m_Name: GameplaySettings
+  m_Name: GroundSettings
   m_EditorClassIdentifier: 
-  groundSpeed: 50
+  idleSpeed: 8
+  pauseSpeed: 0
+  gameOverSpeed: 0
+  gameplaySpeedList:
+  - difficultyLevel: 1
+    speedValue: 20
+  - difficultyLevel: 2
+    speedValue: 30
+  - difficultyLevel: 3
+    speedValue: 40
+  - difficultyLevel: 4
+    speedValue: 50

@@ -4532,9 +4532,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84fb076de7aa2f84bb5a77a6b7fbf0cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TestingSpeed: 0
+  TestSpeed: 50
   testScore: {fileID: 1616003986}
-  testSpeedEvent: 50
-  gameSettings: {fileID: 11400000, guid: cfc8a89281699024896a341483169c96, type: 2}
+  groundSettings: {fileID: 11400000, guid: cfc8a89281699024896a341483169c96, type: 2}
 --- !u!1001 &1429323250
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -78,9 +78,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c398372b3b8bb4d8ffc2dfb31d8570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileFactor: 50
-  tileSpeed: 50
-  gameSettings: {fileID: 11400000, guid: cfc8a89281699024896a341483169c96, type: 2}
+  transitionDuration: 10
+  groundSettings: {fileID: 11400000, guid: cfc8a89281699024896a341483169c96, type: 2}
 --- !u!1 &5937306626434697948
 GameObject:
   m_ObjectHideFlags: 0

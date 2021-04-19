@@ -2,19 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace EG_EndlessShapes
+namespace GroundSystem
 {
 
     [RequireComponent(typeof(Rigidbody))]
     public class GroundTileController : MonoBehaviour
     {
         #region = Public Fields =
-        
-        [Tooltip("This value neutralizes the fixedDeltaTime factor to give a " +
-            "base speed of 1m/sec")]
-        public float tileFactor = 50f; //Default fixed deltaTime is 0.02 (1/50). 
-        public float tileSpeed = 1.0f;
-        public GameplaySettings gameSettings;
+
+        public float transitionDuration = 2;
+        public GroundSettings groundSettings;
 
         #endregion
 
@@ -28,23 +25,54 @@ namespace EG_EndlessShapes
         private void Awake()
         {
             tileRigidbody = GetComponent<Rigidbody>();
+            groundSettings.OnTileSpeedChangeEvent += ChangeSpeed;
         }
 
 
         void Start()
         {
+            
             tileRigidbody.useGravity = false;
         }
 
         private void FixedUpdate()
         {
-            tileRigidbody.velocity = -1 * transform.forward * gameSettings.groundSpeed/*tileSpeed*/ * tileFactor * Time.fixedDeltaTime;
-
-            //Idea for game progression (dificulty increase): use Smooth damp or any of those methods to smoothly increase speed
-            //from initialTileSpeed to targetTileSpeed.
-            //Initially, both values will be equal, so target value should be applied directly.
-
-            //float distance = tileRigidbody.velocity * gameTime; //Where gameTime measures the amount of time transcurred since the game started.
+            //tileRigidbody.velocity = -1 * transform.forward * groundSettings.currentGroundSpeed * Time.fixedDeltaTime;
         }
+
+        private void ChangeSpeed(float newSpeed)
+        {
+            ChangeRigidbodySpeed(newSpeed);
+
+            /*
+            if(newSpeed==0) //Do not lerp if speed is 0 (Pause, GameOver states)
+                ChangeRigidbodySpeed(newSpeed);
+            else
+                StartCoroutine(ChangeSpeed(newSpeed, transitionDuration));
+            */
+        }
+
+        /*
+        private IEnumerator ChangeSpeed(float newSpeed, float transitionTime)
+        {
+            float timeFactor = 0;
+            float initialSpeed = tileRigidbody.velocity.magnitude;
+            float currentSpeed = initialSpeed;
+            while (currentSpeed < newSpeed)
+            {
+                currentSpeed = Mathf.Lerp(initialSpeed, newSpeed, timeFactor);
+                Debug.Log("Updating speed: " + currentSpeed);
+                ChangeRigidbodySpeed(currentSpeed);
+                yield return new WaitForFixedUpdate();
+                timeFactor += Time.fixedDeltaTime / transitionTime;
+            }
+        }
+        */
+
+        private void ChangeRigidbodySpeed(float newSpeed)
+        {
+            tileRigidbody.velocity = -1 * transform.forward * newSpeed;// * Time.fixedDeltaTime;
+        }
+        
     }
 }
