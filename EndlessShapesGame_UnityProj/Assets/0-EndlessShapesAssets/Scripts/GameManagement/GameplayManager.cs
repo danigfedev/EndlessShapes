@@ -101,9 +101,12 @@ namespace GameManagement
             }
         }
 
+        Coroutine speedChangeCoroutine;
         private void ChangeSpeed(float newSpeed, float transitionDuration)
         {
-            StartCoroutine(groundSettings.ChangeSpeed(newSpeed, transitionDuration));
+            if (speedChangeCoroutine != null)
+                StopCoroutine(speedChangeCoroutine);
+            speedChangeCoroutine = StartCoroutine(groundSettings.ChangeSpeed(newSpeed, transitionDuration));
             //groundSettings.CurrentGroundSpeed = newSpeed;
         }
     }
