@@ -1,8 +1,12 @@
-public enum GameStates
+namespace GameManagement
 {
-    NO_STATE = 0,
-    IDLE = 1,
-    PLAYING = 2,
-    PAUSE = 3,
-    GAME_OVER = 4
+    public enum GameStates
+    {
+        NO_STATE = 0,
+        MENU = 1,
+        FTUE = 2,
+        PLAYING = 3,
+        PAUSE = 4,
+        GAME_OVER = 5
+    }
 }

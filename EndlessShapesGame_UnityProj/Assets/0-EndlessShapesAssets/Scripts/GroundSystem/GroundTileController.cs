@@ -71,7 +71,7 @@ namespace GroundSystem
 
         private void ChangeRigidbodySpeed(float newSpeed)
         {
-            tileRigidbody.velocity = -1 * transform.forward * newSpeed;// * Time.fixedDeltaTime;
+            tileRigidbody.velocity = -1 * transform.forward * newSpeed;
         }
         
     }
