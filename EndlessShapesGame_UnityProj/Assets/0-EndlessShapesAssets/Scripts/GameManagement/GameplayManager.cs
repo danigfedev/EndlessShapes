@@ -10,42 +10,28 @@ namespace GameManagement
         [Header("Ground speed tests")]
         public bool TestingSpeed = false;
         public float TestSpeed = 50;
-
+        [Space(10)]
+        [Header("Scriptable Objects")]
+        public GameProgressionData gameplayData;
+        public GroundSettings groundSettings;
+        [Space(10)]
         [Header("UI panels")]
         public GameObject menuPanel;
         public GameObject gamePanel;
-        
+        [Space(10)]
+        [Header("Update optimization parameters")]
+        public int frameStep = 3;
+        int frameCount = 1;
         [Space(10)]
         public TextMeshProUGUI testScore;
 
 
         private float distance = 0;
 
-        //Game State Management
-        public GameProgressionData gameplayData;
-        //private GameStates gameState;
-        /*
-        public delegate void OnGameStateChangeDelegate();
-        public event OnGameStateChangeDelegate OnGameStateChangeEvent;
-        public GameStates GameState
-        {
-            get { return gameState; }
-            set
-            {
-                if (gameState == value) return;
-                gameState = value;
-                if (OnGameStateChangeEvent != null)
-                    OnGameStateChangeEvent();
-                Debug.LogWarning("Game State Changed to " + gameState.ToString());
-            }
-        }
-        */
-
-        public GroundSettings groundSettings;
+        
 
         private void Awake()
         {
-            //groundSettings.currentGroundSpeed = groundSpeed;
             groundSettings.ResetCurrentSpeed();
         }
 
@@ -54,19 +40,16 @@ namespace GameManagement
             OnGameStateChange(GameStates.MENU);
         }
 
-        int frameStep = 3;
-        int frameCount = 1;
+        
         void Update()
         {
             //TESTING State change === TO BE DELETED
             if (Input.GetKeyUp(KeyCode.Space))
                 gameplayData.currentState = GameStates.MENU;
 
-            if (frameCount < frameStep)
-            {
-                frameCount++;
+            if (!Utils.UpdateFrameCounter.CheckFrameCount(frameCount, frameStep))
                 return;
-            }
+
             frameCount = 1;
 
             //Speed tests
@@ -74,6 +57,7 @@ namespace GameManagement
                 ChangeSpeed(TestSpeed, 0);
 
 
+            /*
             if (gameplayData.currentState == GameStates.PLAYING)
             {
                 //NOTE: If i wanted to calculate distance gradually (matching ground tile velocity lerping),
@@ -81,6 +65,7 @@ namespace GameManagement
                 distance += groundSettings.CurrentGroundSpeed * Time.deltaTime;
                 testScore.text = ((int)distance).ToString();
             }
+            */
         }
 
         public void OnGameStateChange(GameStates newState)
