@@ -1690,6 +1690,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 399545571}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &425441551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4243007711899263119, guid: 3ade03b1795e23a4a94bcedae435be2b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6738595885978860582}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &427513314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,8 +2161,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 2774643164893867506}
   - {fileID: 6738595885978860583}
+  - {fileID: 2774643164893867506}
   m_Father: {fileID: 1402056080}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3798,6 +3804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1418475521}
   - component: {fileID: 1418475522}
+  - component: {fileID: 1418475523}
   m_Layer: 0
   m_Name: = Gameplay Manager =
   m_TagString: Untagged
@@ -3833,8 +3840,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TestingSpeed: 0
   TestSpeed: 50
+  menuPanel: {fileID: 425441551}
+  gamePanel: {fileID: 3906637083470921872}
   testScore: {fileID: 1616003986}
+  gameplayData: {fileID: 11400000, guid: 69d8ac08189aa9d4996197f4ce9f5608, type: 2}
   groundSettings: {fileID: 11400000, guid: cfc8a89281699024896a341483169c96, type: 2}
+--- !u!114 &1418475523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418475520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbe65d0ff1fcbe49bf30aeb84863b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStateChangeEventSO: {fileID: 11400000, guid: 539442c8a53852d4399ff8091241b1e5,
+    type: 2}
+  gameStateChangeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1418475522}
+        m_TargetAssemblyTypeName: GameManagement.GameplayManager, Assembly-CSharp
+        m_MethodName: OnGameStateChange
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1429323250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5619,7 +5658,7 @@ PrefabInstance:
     - target: {fileID: 3570390883530838211, guid: d09ec1304e8a805408ad064b045d45bf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3570390883530838211, guid: d09ec1304e8a805408ad064b045d45bf,
         type: 3}
@@ -5788,6 +5827,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1661002351023029553}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3906637083470921872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2394289291501501857, guid: d09ec1304e8a805408ad064b045d45bf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1661002351023029553}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6046200209212720571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5937,7 +5982,7 @@ PrefabInstance:
     - target: {fileID: 1347945098672341079, guid: 3ade03b1795e23a4a94bcedae435be2b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1347945098672341079, guid: 3ade03b1795e23a4a94bcedae435be2b,
         type: 3}
@@ -6033,11 +6078,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 4243007711899263119, guid: 3ade03b1795e23a4a94bcedae435be2b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ade03b1795e23a4a94bcedae435be2b, type: 3}
