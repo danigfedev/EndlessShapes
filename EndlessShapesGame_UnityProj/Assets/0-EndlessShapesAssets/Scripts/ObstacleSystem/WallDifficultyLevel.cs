@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ObstacleSystem
+namespace WallSystem
 {
     [System.Serializable]
     public class WallDifficultyLevel

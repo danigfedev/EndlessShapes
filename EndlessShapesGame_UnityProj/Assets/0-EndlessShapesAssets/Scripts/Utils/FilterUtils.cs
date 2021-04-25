@@ -1,3 +1,4 @@
+using GameManagement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,6 +21,21 @@ namespace Utils
                 if (child.tag == tag) return child.gameObject;
             }
             return null;
+        }
+
+        /// <summary>
+        /// Compares if given game states match. 
+        /// </summary>
+        /// <param name="currentGameState"></param>
+        /// <param name="newGameState"></param>
+        /// <returns>
+        /// False if both states are the same (no game state change)
+        /// True if input states don't match (game state change)</returns>
+        public static bool CheckGameStateChange(GameStates currentGameState, GameStates newGameState)
+        {
+            if (newGameState == currentGameState)
+                return false;
+            return true;
         }
     }
 }

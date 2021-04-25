@@ -5,24 +5,18 @@ using UnityEngine;
 
 public class MainMenuHandler : MonoBehaviour
 {
+    public GameStates playButtonState = GameStates.PLAYING;
+    public GameStates optionsButtonState = GameStates.MENU;
+    public GameStates creditsButtonState = GameStates.MENU;
+    [Header("Scriptable Objects")]
     public GameStateChangeEventSO gameStateChangeEvent;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
+    public GameProgressionData gameplayData;
 
     public void PlayButton_OnClickEvent()
     {
-        gameStateChangeEvent.RaiseEvent(GameStates.PLAYING);
+        gameStateChangeEvent.RaiseEvent(playButtonState);
+        gameplayData.currentState = playButtonState;
+
     }
 
 }

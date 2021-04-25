@@ -10,23 +10,35 @@ public class UI_Manager : MonoBehaviour, IGameStateChange
     public GameObject gameplayMenuPanel;
     public GameObject pauseMenuPanel;
     public GameObject gameOverMenuPanel;
-    
+    [Header("Default active UI Panel")]
+    public GameObject defaultMenuPanel;
+    [Header("Scriptable Objects")]
+    public GameProgressionData gameplayData;
+
     private GameObject currentVisibleMenu;
-    
+
+    private void Awake()
+    {
+        currentVisibleMenu = defaultMenuPanel;
+    }
     /// <summary>
     /// Enables the corresponding UI Menu depending on game's new state
     /// </summary>
     /// <param name="newGameState"></param>
     public void OnGameStateChange(GameStates newGameState)
     {
-        //throw new System.NotImplementedException();
+        if (!Utils.FilterUtils.CheckGameStateChange(gameplayData.currentState, newGameState))
+            return;
+
+        Debug.Log("[UI_Manager] Game state changed to: " + newGameState);
+
         currentVisibleMenu.SetActive(false);
 
         switch (newGameState)
         {
             case GameStates.MENU:
-                gameplayMenuPanel.SetActive(true);
-                currentVisibleMenu = gameplayMenuPanel;
+                mainMenuPanel.SetActive(true);
+                currentVisibleMenu = mainMenuPanel;
                 break;
             case GameStates.FTUE:
                 throw new System.NotImplementedException(

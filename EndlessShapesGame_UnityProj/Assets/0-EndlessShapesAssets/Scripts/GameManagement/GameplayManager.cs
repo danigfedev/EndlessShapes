@@ -37,7 +37,7 @@ namespace GameManagement
 
         void Start()
         {
-            OnGameStateChange(GameStates.MENU);
+            //OnGameStateChange(GameStates.MENU);
         }
 
         
@@ -68,15 +68,19 @@ namespace GameManagement
             */
         }
 
-        public void OnGameStateChange(GameStates newState)
+        public void OnGameStateChange(GameStates newGameState)
         {
-            gameplayData.currentState = newState;
+            if (!Utils.FilterUtils.CheckGameStateChange(gameplayData.currentState, newGameState))
+                return;
 
-            Debug.Log("[GameManagement] Game State changed to " + gameplayData.currentState.ToString());
-            switch (gameplayData.currentState)
+            Debug.Log("[GameplayManager] Game state changed to: " + newGameState);
+
+            //gameplayData.currentState = newGameState;
+
+            switch (newGameState)
             {
                 case GameStates.MENU:
-                    ShowUIMenu(menuPanel);
+                    //ShowUIMenu(menuPanel);
                     ChangeSpeed(groundSettings.idleSpeed, 2);
                     break;
                 case GameStates.PLAYING:
@@ -85,8 +89,10 @@ namespace GameManagement
                     ChangeSpeed(groundSettings.gameplaySpeedList[0].speedValue, 2);
                     break;
                 case GameStates.PAUSE:
+                    ChangeSpeed(groundSettings.pauseSpeed, 0);
                     break;
                 case GameStates.GAME_OVER:
+                    ChangeSpeed(groundSettings.pauseSpeed, 0);
                     break;
             }
         }
