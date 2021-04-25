@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace GameManagement
 {
-    public class GameplayManager : MonoBehaviour
+    public class GameplayManager : MonoBehaviour, IGameStateChange
     {
         [Header("Ground speed tests")]
         public bool TestingSpeed = false;

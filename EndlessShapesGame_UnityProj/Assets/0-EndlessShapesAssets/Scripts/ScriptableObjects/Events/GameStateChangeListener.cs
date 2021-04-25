@@ -10,7 +10,7 @@ public class GameStateChangeEvent : UnityEvent<GameStates> { }
 public class GameStateChangeListener : MonoBehaviour
 {
     public GameStateChangeEventSO gameStateChangeEventSO;
-    public GameStateChangeEvent gameStateChangeEvent;
+    public GameStateChangeEvent response;
 
     private void OnEnable()
     {
@@ -24,6 +24,6 @@ public class GameStateChangeListener : MonoBehaviour
 
     public void RaiseEvent(GameStates newGameState)
     {
-        gameStateChangeEvent.Invoke(newGameState);
+        response.Invoke(newGameState);
     }
 }
